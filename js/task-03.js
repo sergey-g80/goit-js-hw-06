@@ -17,6 +17,7 @@ const markup = images
   .map((el) => `<li><img src="${el.url}" alt="${el.alt}" width = 300 /></li>`)
   .join(``);
 const heroEl = document.querySelector(`.gallery`);
+
 heroEl.insertAdjacentHTML(`afterbegin`, markup);
 
 heroEl.setAttribute("style", "list-style-type:none; display: flex;");
